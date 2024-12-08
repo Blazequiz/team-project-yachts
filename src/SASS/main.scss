@@ -1,6 +1,12 @@
-.header {
-  background-color: aquamarine;
-}
-.footer {
-  background-color: greenyellow;
-}
+@use"./base/reset";
+@use"./utils/variables";
+@use"./base/common";
+@use"./components/container";
+@use"./layout/header-section";
+@use"./layout/hero-section";
+@use"./layout/about-section";
+@use"./layout/yachts-section";
+@use"./layout/features-section";
+@use"./layout/rent-section";
+@use"./layout/feedback-section";
+@use"./layout/footer-section";
