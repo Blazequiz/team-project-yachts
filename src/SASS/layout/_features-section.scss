@@ -1,9 +1,9 @@
 .features {
   &-list {
-    // display: grid;
+    display: grid;
   }
   &-item {
-      position: relative;
+      position: static;       
   }
 }
 

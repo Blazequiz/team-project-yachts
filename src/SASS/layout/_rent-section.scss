@@ -1,0 +1,69 @@
+// .rent-section {
+//   &-title {
+//     margin-bottom: 20px;
+//   }
+// }
+// .order_form {
+//   width: 335px;
+//   &-button {
+//     border: 1px solid white;
+//     border-radius: 60px;
+//     background-color: transparent;
+//     padding: 14px 28px;
+//     // font-family: $font-family;
+//     color: white;
+//   }
+// }
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+label {
+  text-align: left;
+  font-size: 14px;
+  color: #fff;
+}
+
+input {
+  padding-bottom: 16px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 16px;
+}
+textarea {
+  resize: none;
+  // padding-bottom: 58px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* Стили кнопки отправки */
+.send-button {
+  background-color: #ffffff;
+  color: #000;
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.3s ease;
+}
+
+.send-button:hover {
+  background-color: #dddddd;
+}
+
+.arrow {
+  font-size: 20px;
+}
