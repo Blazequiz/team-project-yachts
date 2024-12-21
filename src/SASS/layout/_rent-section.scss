@@ -1,4 +1,5 @@
 .rent-section {
+  padding-bottom: 80px;
   &-title {
     margin-bottom: 16px;
     // font-family: var(--font-family);
@@ -8,24 +9,27 @@
     letter-spacing: -0.04em;
     color: #F6F5EF;    
   }
-}
-.order_form {
-  &-button {
-    border: 1px solid white; // variables will be added later
-    border-radius: 60px;
-    background-color: transparent;
-    padding: 14px 28px;
-    font-family:"DM Sans", sans-serif;  // variables will be added later
-    color: white; // variables will be added later
+  &-form {
     display: flex;
-    align-items: center;
-    gap: 16px;
-  }
-}
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+    flex-direction: column;
+    gap: 24px;
+    &-button {
+      border: 1px solid white; // variables will be added later
+      border-radius: 60px;
+      background-color: transparent;
+      padding: 14px 28px;
+      font-family:"DM Sans", sans-serif;  // variables will be added later
+      color: white; // variables will be added later
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    &-right-arrow {
+      width: 18px;
+      height: 18px;
+      fill: #F6F5EF;
+    }
+  } 
 }
 
 label {
