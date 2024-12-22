@@ -1,22 +1,28 @@
 .features {
+  padding-bottom: 80px;
   &-list {
-    // display: grid;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
   }
   &-item {
       position: relative;
+      border-radius: 42px;    
+      overflow: hidden;   
   }
 }
 
 .feature-button {
+  bottom: 24px;
+  left: 24px;
   padding: 14px 28px;
   position: absolute;
-  // font-family: $font-family; // головний за variables , повинен додати це до них
+  font-family:"DM Sans", sans-serif; // variables will be added later
   font-weight: 700;
   font-size: 14px;
   line-height: 110%;
   letter-spacing: -0.04em;
-  // color: var(--dark-blue); // головний за variables , повинен додати це до них
   border: none;
   border-radius: 60px;
-  color: #F6F5EF;   // головний за variables , повинен додати це до них
+  color: #11131F; // variables will be added later  
 }

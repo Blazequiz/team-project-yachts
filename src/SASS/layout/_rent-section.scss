@@ -1,0 +1,66 @@
+.rent-section {
+  padding-bottom: 80px;
+  &-title {
+    margin-bottom: 16px;
+    // font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 110%;
+    letter-spacing: -0.04em;
+    color: #F6F5EF;    
+  }
+  &-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    &-button {
+      border: 1px solid white; // variables will be added later
+      border-radius: 60px;
+      background-color: transparent;
+      padding: 14px 28px;
+      font-family:"DM Sans", sans-serif;  // variables will be added later
+      color: white; // variables will be added later
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    &-right-arrow {
+      width: 18px;
+      height: 18px;
+      fill: #F6F5EF;
+    }
+  } 
+}
+
+label {
+  text-align: left;
+  font-size: 14px;
+  color: #fff;
+}
+
+input {
+  // padding-bottom: 16px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 16px;
+}
+textarea {
+  resize: none;
+  // padding-bottom: 58px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 16px;
+}
+.yacht-form-img {
+  margin-bottom: 40px;
+}
+.rent-section-form-right-arrow {
+  width: 18px;
+  height: 18px;
+  fill: #F6F5EF;
+}
+
