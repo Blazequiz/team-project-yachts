@@ -7,12 +7,21 @@
     font-size: 36px;
     line-height: 110%;
     letter-spacing: -0.04em;
-    color: #F6F5EF;    
+    color: #F6F5EF;   
+    @media screen and (min-width:768px) {
+      font-size: 60px;
+      margin-bottom: 32px;
+    } 
   }
   &-form {
     display: flex;
     flex-direction: column;
+    width: 335px;
     gap: 24px;
+    @media screen and (min-width:768px) {
+      width: 364px;
+      gap: 28px;
+    } 
     &-button {
       border: 1px solid white; // variables will be added later
       border-radius: 60px;
@@ -36,8 +45,17 @@ label {
   text-align: left;
   font-size: 14px;
   color: #fff;
+  display: flex;
+  flex-direction: column;
 }
-
+.label {
+  &-name ,
+  &-email ,
+  &-phone
+  {
+    height: 33px;
+  }
+}
 input {
   // padding-bottom: 16px;
   background: none;
@@ -55,12 +73,37 @@ textarea {
   color: #fff;
   font-size: 16px;
 }
-.yacht-form-img {
-  margin-bottom: 40px;
+.thumb {
+  width: 259px;
+  height: 187px;
+  @media screen and (min-width:768px) {
+    width: 271px;
+  }
 }
 .rent-section-form-right-arrow {
   width: 18px;
   height: 18px;
   fill: #F6F5EF;
 }
-
+.help-wrapper {
+  @media screen and (max-width:767px){
+    margin-bottom: 40px;
+  }
+}
+// .wrapper {
+//   &-image {
+//     @media screen and (min-width:768px) {
+//       width: 271px;
+//     }
+//   }
+// }
+// .container-alignments {
+//   display: flex;
+//   gap: 69px;
+// }
+.rent-wrapper {
+  @media screen and (min-width:768px) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
