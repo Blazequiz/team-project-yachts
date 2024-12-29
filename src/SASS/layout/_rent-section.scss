@@ -2,7 +2,7 @@
   padding-bottom: 80px;
   &-title {
     margin-bottom: 16px;
-    // font-family: var(--font-family);
+    font-family: $font-family;
     font-weight: 500;
     font-size: 36px;
     line-height: 110%;
@@ -27,7 +27,7 @@
       border-radius: 60px;
       background-color: transparent;
       padding: 14px 28px;
-      font-family:"DM Sans", sans-serif;  // variables will be added later
+      font-family:$font-family;  
       color: white; // variables will be added later
       display: flex;
       align-items: center;
@@ -90,17 +90,6 @@ textarea {
     margin-bottom: 40px;
   }
 }
-// .wrapper {
-//   &-image {
-//     @media screen and (min-width:768px) {
-//       width: 271px;
-//     }
-//   }
-// }
-// .container-alignments {
-//   display: flex;
-//   gap: 69px;
-// }
 .rent-wrapper {
   @media screen and (min-width:768px) {
     display: flex;
