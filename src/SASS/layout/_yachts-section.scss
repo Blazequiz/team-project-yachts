@@ -1,0 +1,63 @@
+// .swiper .yachtSwiper {
+//     height: 397px;
+// }
+// .yachts .swiper-slide {
+//     width: 335px;
+//     height: 364px;
+// }
+
+// .swiper-button-prev {
+//     background-image: url(".logo_yacht.svg");
+// }
+
+
+
+
+.yacht-section {
+    &-card {
+        border-radius: 24px;
+        width: 335px;
+        height: 469px;
+        background-color: #1F212D;
+        padding: 18px;
+    }
+    &-img {
+        width: 299px;
+        border-radius: 24px;
+        margin-bottom: 24px;
+    }
+    &-info {
+       display: flex; 
+       align-items: center;
+       justify-content: space-between;
+       margin-bottom: 24px;
+    }
+    &-info-title {
+        color: white;
+        ont-weight: 700;
+        font-size: 16px;
+        line-height: 120%;
+        letter-spacing: -0.04em;
+    }
+    &-info-description {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 118%;
+        letter-spacing: 0.03em;
+        color: rgb(255, 255, 255, 50%);
+    }
+    &-list {
+        
+    }
+    &-item {
+        display: flex;
+        gap: 34px;
+        &-title {
+            color: white;
+            width: 67px;
+        }
+    }
+    &-title-description {
+        color: white;
+    }
+}
