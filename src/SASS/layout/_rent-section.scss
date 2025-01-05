@@ -21,14 +21,17 @@
     @media screen and (min-width:768px) {
       width: 364px;
       gap: 28px;
-    } 
+    }
+    @media screen and (min-width:1280px) {
+      width: 443px;
+    }  
     &-button {
-      border: 1px solid white; // variables will be added later
+      border: 1px solid white; 
       border-radius: 60px;
       background-color: transparent;
       padding: 14px 28px;
       font-family:$font-family;  
-      color: white; // variables will be added later
+      color: $main-color; 
       display: flex;
       align-items: center;
       gap: 16px;
@@ -44,9 +47,15 @@
 label {
   text-align: left;
   font-size: 14px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.04em; 
   color: #fff;
   display: flex;
   flex-direction: column;
+  @media screen and (min-width:768px){
+    font-size: 16px;
+  }
 }
 .label {
   &-name ,
@@ -54,6 +63,9 @@ label {
   &-phone
   {
     height: 33px;
+    @media screen and (min-width:768px){
+      height: 35px;
+    }
   }
 }
 input {
@@ -89,10 +101,22 @@ textarea {
   @media screen and (max-width:767px){
     margin-bottom: 40px;
   }
+  @media screen and (min-width:1280px){
+    width: 282px;
+  }
 }
 .rent-wrapper {
-  @media screen and (min-width:768px) {
+  @media screen and (max-width:767px) {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+  }
+  @media screen and (max-width:1279px) {
+    display: flex;
+    justify-content: space-between;
+  }
+  @media screen and (min-width:1280px) {
+    display: flex;
+    justify-content: center;
+    gap: 169px;
   }
 }
