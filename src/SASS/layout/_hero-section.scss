@@ -1,5 +1,6 @@
 .hero {
     padding-top: 40px;
+    padding-bottom: 80px;
 
     &__text {
         color: white;
@@ -7,10 +8,11 @@
         font-size: 14px;
         line-height: 140%;
         letter-spacing: -0.02em;
-        margin-top: 14px;
+        margin-bottom: 24px;
     }
 
     &__title {
+        margin-bottom: 14px;
         font-weight: 500;
         font-size: 36px;
         line-height: 110%;
@@ -24,10 +26,12 @@
 
     &__button-list {
         display: flex;
-        padding-top: 24px;
+        gap: 8px;
+
     }
 
     &__button {
+        margin-bottom: 40px;
         border-radius: 60px;
         padding: 14px 28px;
         width: 130px;
@@ -75,5 +79,90 @@
         letter-spacing: -0.04em;
         background-color: #11131F;
         color: white;
+    }
+}
+.box {
+    &-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    &-images {
+        padding: 24px;
+        background-image: url(../../img/background-hero-section.png);
+        width: 336px;
+        height: 427px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        &-title {
+            font-family: $font-family;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 110%;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: $main-text-color;
+        }
+        &-element {
+            position: relative;
+            &-position {
+                position: relative;
+                right: 8px;
+                z-index: 1;
+            }
+            &-second-position {
+                position: relative;
+                right: 16px;
+            }
+            &-third-position {
+                position: relative;
+                z-index: 2;
+            }
+        }
+    }
+}
+.help-images-div {
+    margin-bottom: 52px;
+}
+// for the text 
+
+.text-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 14px;  
+}
+.box-paragraph {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: -0.04em;
+    color: $main-text-color;  
+}
+.box-second-title {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 110%;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    color: $main-text-color;    
+}
+// decoration image 
+.decoration {
+    &-images-wrapper {
+        position: relative;        
+    }
+    &-image {
+        border-radius: 24px;
+    }
+}
+// @media screen and (min-width:768px){
+    
+// }  
+.hero {
+    &-images-list {
+        display: flex;
+        margin-bottom: 11px;
     }
 }
