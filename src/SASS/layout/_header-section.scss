@@ -1,7 +1,13 @@
 .header {
     &-nav {
         display: flex;
-        align-items: center ;
+        align-items: center;
+        padding-bottom: 24px;
+        padding-top: 24px;
+        @media screen and (min-width: 768px) {
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
     }
     &-list {
         @media screen and (max-width: 767px) {
@@ -17,7 +23,6 @@
             font-size: 14px;
             color: white;
         }
-
     }
     &-svg {
         width: 18px;
@@ -29,7 +34,7 @@
         color: white;
         font-weight: 500;
         font-size: 18px;
-        gap: 8px;
+        gap: 8px;   
     }
 }
 .burger-button {
@@ -46,4 +51,9 @@
     }
 }
 
-    
+.header .container::after {
+    display: block;
+    content: "";
+    height: 1px;
+    background-color: rgba(246, 245, 239, 0.2);
+}
