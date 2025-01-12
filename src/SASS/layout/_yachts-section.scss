@@ -71,10 +71,22 @@
 
 .swiper-button-next {
     border: 1px solid white;
-    border-radius: 60px; 
+    border-radius: 60px;
+    &::after {
+        display: none;
+    }
+    &-svg {
+        fill: #FFF;
+    }
 }
 
 .swiper-button-prev {
     border: 1px solid white;
     border-radius: 60px;
+    &::after {
+        display: none;
+    }
+    &-svg {
+        fill: #FFF;
+    }
 }
