@@ -12,8 +12,8 @@
     />
     
     
-    <script type="module" crossorigin src="/team-project-yachts/assets/index-24bdc4a3.js"></script>
-    <link rel="stylesheet" href="/team-project-yachts/assets/index-2606baf7.css">
+    <script type="module" crossorigin src="/team-project-yachts/assets/index-877ffd90.js"></script>
+    <link rel="stylesheet" href="/team-project-yachts/assets/index-f16496de.css">
   </head>
   <body>
     <!-- <section>
@@ -27,7 +27,7 @@
   <div class="container">
     <nav class="header-nav">
       <a href="" class="header-logo">
-        <img src="/team-project-yachts/assets/logo_yacht-5c75fc90.svg" alt="" class="header-svg">
+        <img src="/team-project-yachts/assets/logo_yacht-5c75fc90.svg" alt="" class="header-svg" />
         YACHT ADVENTURES
       </a>
       <ul class="header-list">
@@ -41,7 +41,7 @@
           <a href="">REVIEWERS</a>
         </li>
       </ul>
-      <button class="burger-button">
+      <button class="burger-button js-open-menu">
         <svg class="burger-button-svg" width="20" height="20px">
           <use href="/team-project-yachts/assets/symbol-defs-2dc402af.svg#icon-burgermenu-svg"></use>
         </svg>
@@ -49,6 +49,61 @@
     </nav>
   </div>
 </header>
+
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <div class="burger-underline">
+    <ul class="burger-logo-list">
+      <li class="burger-logo-item">
+        <a href="" class="burger-logo">
+          <img src="/team-project-yachts/assets/logo_yacht-5c75fc90.svg" alt="" class="burger-logo-svg" />
+          YACHT ADVENTURES
+        </a>
+      </li>
+      <li class="burger-logo-item">
+        <button class="menu-button-close js-close-menu">
+          <!-- <svg>
+          <use href="./img/symbol-defs.svg#icon-close-button-svg"></use>
+        </svg> -->
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="close-button-svg"
+          >
+            <path
+              d="M18 6L6 18"
+              stroke="#F6F5EF"
+              stroke-width="1.3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M6 6L18 18"
+              stroke="#F6F5EF"
+              stroke-width="1.3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <ul class="burger-list">
+    <li class="burger-item">
+      <a href="">ABOUT</a>
+    </li>
+    <li class="burger-item">
+      <a href="">YACHTS</a>
+    </li>
+    <li class="burger-item">
+      <a href="">REVIEWERS</a>
+    </li>
+  </ul>
+</div>
+
     <section class="hero">
     <div class="container wrapper">
       <div class="hero-title-wrapper">
@@ -628,8 +683,16 @@
           </div>
         </div>
       </div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next">  </div>
+      <div class="swiper-button-prev">
+        <svg class="swiper-button-prev-svg">
+          <use href="/team-project-yachts/assets/symbol-defs-2dc402af.svg#icon-arrow-stroke-left"></use>
+        </svg>
+      </div>
+      <div class="swiper-button-next">
+        <svg class="swiper-button-next-svg">
+          <use href="/team-project-yachts/assets/symbol-defs-2dc402af.svg#icon-arrow-stroke-right"></use>
+        </svg>
+      </div>
     </div>
   </div>
 </section>
