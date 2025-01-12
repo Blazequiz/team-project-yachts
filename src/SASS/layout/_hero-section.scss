@@ -53,6 +53,10 @@
         letter-spacing: -0.04em;
         color: white;
         border: none;
+        transition: background-color 500ms ease;
+        &:hover {
+            background-color:#88b3b9;
+        }
         @media screen and (min-width:768px){
             font-size: 18px;
         }
@@ -88,6 +92,12 @@
         letter-spacing: -0.04em;
         background-color: transparent;
         color: white;
+        transition: border 500ms ease;
+        transition: color 500ms ease;
+        &:hover {
+            border: 1px solid #93ABAE;
+            color: #93ABAE;
+        }
         @media screen and (min-width:768px){
             font-size: 18px;
         }
