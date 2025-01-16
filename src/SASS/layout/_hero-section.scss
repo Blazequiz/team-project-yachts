@@ -107,6 +107,7 @@
     &-wrapper {
         display: flex;
         justify-content: center;
+        position: relative;
         @media screen and (min-width:768px) {
             justify-content: flex-start;
         }
@@ -130,7 +131,7 @@
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-          background-image:     url("../img/background-hero-section.png");
+          background-image: url("../img/background-hero-section.png");
       }
         // tablet images Ret.
         @media screen and (min-width:768px) {
