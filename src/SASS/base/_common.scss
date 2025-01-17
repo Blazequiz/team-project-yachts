@@ -3,6 +3,9 @@ body {
   background-color: #11131F;
   color: $main-color;
 }
+html {
+  scroll-behavior: smooth;
+ }
 .flex {
   display: flex;
 }
