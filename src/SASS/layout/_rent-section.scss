@@ -47,6 +47,10 @@
       display: flex;
       align-items: center;
       gap: 16px;
+      transition: fill 500ms ease , color 500ms ease , border 500ms ease;
+      &:hover {
+        border: 1px solid #93ABAE; 
+      }
     }
     &-right-arrow {
       width: 18px;
