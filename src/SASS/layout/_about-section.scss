@@ -45,6 +45,7 @@
         font-size: 36px;
         line-height: 110%;
         letter-spacing: -0.04em;
+        background-image: radial-gradient
     }
 
 
@@ -91,8 +92,22 @@
         @media screen and (min-width: 768px) {
             width: 260px;
             height: 244px;
+            position: absolute;
+            right: 0px;
         }
     }
+
+    // .img__item:nth-child(3)::before {
+    //     content: "";
+    //     width: 284px;
+    //     height: 284px;
+    //     border-radius: 100%;
+    //     background-color: #91afba;
+    //     filter: blur(100px);
+    //     position: absolute;
+    //     bottom: -142px;
+    //     right: -142px;
+    // }
 
     &__button {
         font-weight: 700;
