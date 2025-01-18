@@ -6,7 +6,8 @@
     height: 100vh;
     background-color: #11131F;
     padding: 24px 20px;
-    transform: translate(100%);
+    transform: translateX(100%);
+    transition: transform 500ms ease;
     display: flex;
     flex-direction: column;
     z-index: 3;
@@ -60,6 +61,7 @@
 
   .menu-container.is-open {
     transform: translateX(0%);
+    transition: transform 500ms ease;
   }
 
   .close-button-svg {
