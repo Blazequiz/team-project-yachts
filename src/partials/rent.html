@@ -1,5 +1,5 @@
 <section class="rent-section">
-      <div class="container container-alignments">  <!--flex container-alignments-->
+      <div class="container container-alignments">
         <div class="rent-wrapper">
           <div class="help-wrapper">
             <h2 class="rent-section-title">
@@ -11,19 +11,19 @@
           </div>
           <form class="rent-section-form">
             <label class="label-name">Full Name
-              <input type="text" required class="input-name">
+              <input type="text" class="input-name">
             </label>
             <label class="label-email">Email
-              <input type="email" required class="input-email">
+              <input type="email" class="input-email">
             </label>
             <label class="label-phone">Phone number
-              <input type="tel" required class="input-phone">
+              <input type="tel" class="input-phone">
             </label>
             <label class="label-textarea">Comment
               <textarea rows="4" class="rent-section-textarea"></textarea>
             </label>
             <div>
-              <button class="rent-section-form-button">
+              <button class="rent-section-form-button" type="button" data-modal-open>
                 Send
                 <svg class="rent-section-form-right-arrow">
                   <use href="./img/symbol-defs.svg#icon-arrow-stroke-right">
@@ -36,3 +36,31 @@
       </div>
     </div>
 </section>
+
+<div class="backdrop  is-hidden" data-modal>
+  <div class="modal">
+    <button class="rent-section-modal-button" data-close-modal>
+      <svg class="close-button-rent-modal" width="20" height="20" >
+        <use href="./img/symbol-defs.svg#icon-close-button-svg"></use>
+      </svg>
+  </button>
+  <div class="modal-wrapper">
+    <div class="image-wrapp">
+      <picture>
+        <source srcset="./img/box-yacht-image-tablet@1x.png 1x, ./img/box-yacht-image-tablet@2x.png 2x" media="(min-width:1200px)">
+        <source srcset="./img/box-yacht-image-tablet@1x.png 1x, ./img/box-yacht-image-tablet@2x.png 2x" media="(min-width:768px)">
+        <source srcset="./img/box-yacht-image.png 1x, ./img/box-yacht-image@2x.png 2x" media="(max-width:767px)">
+        <img src="./../img/img-rent-modal-yaht-mobile1x.png" alt="modal-image" class="modal-image">
+      </picture>
+    </div>
+    <h2 class="modal-title">Thank you</h2>
+    <p class="modal-paragraph">
+       Thank you for choosing Yacht Adventures,
+       your booking details have been received and
+       our team will be in touch shortly to confirm
+       your reservation and provide any additional
+       information or assistance you may need.
+    </p>
+  </div>
+</div>
+</div>    

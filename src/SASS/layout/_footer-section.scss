@@ -58,7 +58,12 @@
     margin-bottom: 24px;
   }
 }
-
+.footer-item {
+  transition: color 500ms ease;
+  &:hover {
+    color: #93ABAE;
+  }
+}
 .footer-social-title {
   margin-bottom: 16px;
 }
@@ -79,13 +84,20 @@
   height: 32px;
   border-radius: 6px;
   border: 1px solid rgba(246, 245, 239, 0.5);
+  transition: border 500ms ease;
+  &:hover {
+    border: 1px solid #93ABAE; 
+  }
   @media (min-width: 768px) {
     width: 40px;
     height: 40px;
   }
 }
-
+.footer-social-list a:hover .footer-social-icon{
+  fill: #93ABAE; 
+}
 .footer-social-icon {
+  transition: fill 500ms ease;
   fill: white;
   width: 14px;
   height: 14px;

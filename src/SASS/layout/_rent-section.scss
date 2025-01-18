@@ -18,6 +18,18 @@
     flex-direction: column;
     width: 335px;
     gap: 24px;
+    position: relative;
+    &::after {
+      content: "";
+      width: 284px;
+      height: 284px;
+      border-radius: 100%;
+      background-color: #91afba;
+      filter: blur(100px);
+      position: absolute;
+      bottom: -142px;
+      right: -142px;
+    }
     @media screen and (min-width:768px) {
       width: 364px;
       gap: 28px;
@@ -35,6 +47,10 @@
       display: flex;
       align-items: center;
       gap: 16px;
+      transition: fill 500ms ease , color 500ms ease , border 500ms ease;
+      &:hover {
+        border: 1px solid #93ABAE; 
+      }
     }
     &-right-arrow {
       width: 18px;
