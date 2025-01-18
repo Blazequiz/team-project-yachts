@@ -51,6 +51,13 @@
     color: white;
   }
 
+  .burger-item {
+    transition: color 500ms ease;
+        &:hover {
+            color: #93ABAE;
+        }
+  }
+
   .menu-container.is-open {
     transform: translateX(0%);
   }

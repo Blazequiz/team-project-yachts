@@ -135,7 +135,7 @@
         left: 298px;
     }
     @media screen and (min-width: 1280px) {
-        left: 32px;
+        left: 3px;
         top: auto;
         bottom: 225px;
     }
@@ -148,6 +148,10 @@
     width: 18px;
 }
 
-.swiper-slide {
-    
+.swiper.yachtSwiper {
+    width: 1094px;
+}
+
+.swiper-slide .swiper-slide-next {
+    width: 354px;
 }
