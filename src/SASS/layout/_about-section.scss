@@ -30,6 +30,13 @@
         @media screen and (min-width: 768px) {
             justify-content: end;
         }
+
+    }
+
+    .title__container {
+        @media screen and (min-width: 1280px) {
+            display: flex;
+        }
     }
 
     &__item {
@@ -45,13 +52,16 @@
         font-size: 36px;
         line-height: 110%;
         letter-spacing: -0.04em;
-        background-image: radial-gradient
     }
-
-
 
     .img__list {
         gap: 24px;
+
+        @media screen and (min-width: 1280px) {
+            position: relative;
+            width: 553px;
+            margin: auto;
+        }
     }
 
     &__outside {
@@ -73,11 +83,21 @@
 
     .img__item:nth-child(1) {
         max-width: 704;
+
+        @media screen and (min-width: 1280px) {
+            width: 553px;
+        }
     }
 
     .img__item:nth-child(2) {
         max-width: 308px;
         background-repeat: no-repeat;
+
+        @media screen and (min-width: 1280px) {
+            top: 254px;
+            left: -324px;
+            position: absolute;
+        }
     }
 
     .img__item:nth-child(3) {
@@ -92,22 +112,18 @@
         @media screen and (min-width: 768px) {
             width: 260px;
             height: 244px;
-            position: absolute;
-            right: 0px;
+            position: relative;
+            bottom: 100px;
+            left: 372px;
+
+        }
+
+        @media screen and (min-width: 1280px) {
+            top: unset;
+            bottom: unset;
+            left: unset;
         }
     }
-
-    // .img__item:nth-child(3)::before {
-    //     content: "";
-    //     width: 284px;
-    //     height: 284px;
-    //     border-radius: 100%;
-    //     background-color: #91afba;
-    //     filter: blur(100px);
-    //     position: absolute;
-    //     bottom: -142px;
-    //     right: -142px;
-    // }
 
     &__button {
         font-weight: 700;
@@ -119,6 +135,14 @@
         padding: 14px 28px;
         background-color: transparent;
         color: white;
+        margin-bottom: 100px;
+        position: relative;
+        left: 45px;
+        top: 100px;
+
+        @media screen and (min-width: 1280px) {
+            margin-left: 125px;
+        }
     }
 
     &__subtitle {
@@ -130,7 +154,20 @@
         @media screen and (min-width: 768px) {
             font-weight: 500;
             font-size: 70px;
+            margin-top: 0;
+            // position: absolute;
+            // top: 1683px;
+            // left: 64px;
+            width: 640px;
         }
 
+        @media screen and (min-width: 1280px) {
+            width: 888px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 100px;
+        }
     }
+
+
 }
